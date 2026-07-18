@@ -37,13 +37,30 @@ body {
     padding: 0;
     font-size: 4vw;
 }
-.nav-links a{
+.nav-links a {
     color: white;
     text-decoration: none;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 4px;
+    transition: color 0.3s ease;
+}
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background-color: black;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
 }
 .nav-links a:hover {
     color: black;
-    text-decoration: underline;
+}
+.nav-links a:hover::after {
+    transform: scaleX(1);
 }
 
 @media (prefers-color-scheme: light) {
