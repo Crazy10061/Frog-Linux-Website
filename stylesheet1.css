@@ -19,6 +19,7 @@
 body {
     margin: 0;
     font-family: "DM Sans" , sans-serif;
+    background-color: #aed1aa;
 }
 .navbar {
     font-family: "Yuyu Short", sans-serif;
@@ -28,6 +29,7 @@ body {
     background-color: #aed1aa;
     color: white;
     padding: 15px 30px;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
 }
 .nav-links {
     list-style: none;
