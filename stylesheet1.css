@@ -105,6 +105,38 @@ body {
     width: 100%;
 }
 
+.about-hero {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 50vh;
+}
+
+.about-hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 60px;
+    gap: 40px;
+}
+
+.about-hero-text {
+    flex: 1;
+    max-width: 500px;
+}
+
+.about-hero-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-hero-image img {
+    max-width: 350px;
+    width: 100%;
+}
+
 .downloads-hero {
     align-items: center;
     display: flex;
