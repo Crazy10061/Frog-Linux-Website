@@ -1,48 +1,77 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-    <link rel="stylesheet" type="text/css" href="stylesheet1.css">
-    <head>
-        <meta charset="UTF-8">
-        <title>Frog Linux</title>
-        <link rel="icon" type="image/x-icon" href="images/icon.ico">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <meta property="og:title" content="Frog Linux">
-        <meta property="og:description" content="The Main Webpage of Frog Linux">
-        <meta property="og:url" content="https://frog-linux.com">
-        <meta property="og:type" content="website">
-        <meta property="og:image" content="https://github.com/Crazy10061/Frog-Linux-Website/blob/master/images/icon.png?raw=true">
-        <meta name="twitter:card" content="summary">
-        <meta name="theme-color" content="#aed1aa">
+    <!-- Meta -->
+    <title>Try Frog Linux</title>
+    <meta
+      name="description"
+      content="A distro just for the lolz (and the frogs)"
+    />
+    <meta name="author" content="Crazy10061, xeoniii, Nikita, FoxedDev" />
+    <meta name="theme-color" content="#aed1aa" />
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
 
-	<link rel="stylesheet" href="https://unpkg.com/lenis@1.3.25/dist/lenis.css">
-  	<script src="https://unpkg.com/lenis@1.3.25/dist/lenis.min.js"></script>
-  	<script>new Lenis({ autoRaf: true, autoToggle: true, anchors: true, allowNestedScroll: true, naiveDimensions: true, stopInertiaOnNavigate: true })</script>
-    </head>
-    <body>
-        <nav class="navbar">
-            <div class="logo">
-                <img src="images/logo.png" alt="logo" width="150" height="100">
-            </div>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="downloads.html">Download</a></li>
-            </ul>
-        </nav>
+    <!-- OpenGraph -->
+    <meta property="og:title" content="Try Frog Linux" />
+    <meta
+      property="og:description"
+      content="A distro just for the lolz (and the frogs)"
+    />
+    <meta
+      property="og:image"
+      content="https://frog-linux.com/images/frog.png"
+    />
+    <meta property="og:url" content="https://frog-linux.com/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Frog Linux" />
+    <meta property="og:locale" content="en_US" />
 
-        <section class="hero hero-top">
-          <div class="hero-content">
-            <div class="hero-text">
-              <h1>Frog Linux</h1>
-              <p>Frog Linux is a Arch based Operating System inspired by Frogs.</p>
-              <div class="cta-buttons">
-                <a href="downloads.html" class="btn btn-filled">Downloads</a>
-              </div>
-            </div>
-            <div class="hero-image">
-              <img src="images/frog.png">
-            </div>
-          </div>
-        </section>
-    </body>
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Try Frog Linux" />
+    <meta
+      name="twitter:description"
+      content="A distro just for the lolz (and the frogs)"
+    />
+    <meta
+      name="twitter:image"
+      content="https://frog-linux.com/images/logo.png"
+    />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Delicious+Handrawn&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="content">
+        <div class="heading">
+          <h1>Try <u>Frog Linux</u></h1>
+          <p>
+            A distro just for the lolz (and the frogs) <br />
+            The name of that frog over there is Freddy (they/them) btw
+          </p>
+        </div>
+        <div class="cta">
+          <a href="/download" class="button primary">
+            Download <img src="/images/icons/download.svg" alt="" />
+          </a>
+          <a href="/frog" class="button secondary">About</a>
+        </div>
+      </div>
+      <img class="frog-blob" src="/images/frog-blob.png" alt="" />
+      <img class="blob1" src="/images/blob1.svg" alt="" />
+      <img class="blob2" src="/images/blob2.svg" alt="" />
+    </header>
+  </body>
 </html>
