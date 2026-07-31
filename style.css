@@ -8,6 +8,8 @@
 
   --font-display: "Delicious Handrawn", sans-serif;
   --font-default: "Rubik", sans-serif;
+
+  font-size: 8pt;
 }
 
 body {
@@ -16,13 +18,16 @@ body {
   background-color: var(--color-bg);
   color: var(--color-fg);
   min-height: 100dvh;
+  width: 100vw;
+  font-size: 50%;
+  overflow: hidden;
 }
 
 header {
   display: flex;
   flex-direction: column-reverse;
   min-height: 100dvh;
-  padding: 6rem;
+  padding: 2rem;
   box-sizing: border-box;
 }
 
@@ -40,13 +45,14 @@ header .heading {
 
 header .heading h1 {
   font-family: var(--font-display);
-  font-size: 8rem;
+  font-size: 6rem;
   margin: 0;
 }
 
 header .heading u {
   text-decoration: none;
   position: relative;
+  text-wrap: nowrap;
 }
 
 header .heading u::before {
@@ -54,37 +60,46 @@ header .heading u::before {
   background-image: url("/images/underline.svg");
   display: block;
   position: absolute;
-  width: 466px;
-  height: 36px;
-  overflow: visible;
-  bottom: -35px;
-  left: -10px;
+  width: 100%;
+  height: 100%;
+  bottom: -2rem;
+  left: 0;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom;
 }
 
 header .heading p {
   line-height: 160%;
   margin: 0;
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 .cta {
   display: flex;
   gap: 1rem;
+  flex-wrap: wrap;
+  margin-right: 16rem;
 }
 
 .button {
   display: block;
   width: fit-content;
   color: var(--color-fg);
-  padding: 3rem;
+  padding: 2.5rem;
   font-family: var(--font-display);
   font-weight: 600;
-  font-size: 3.5rem;
+  font-size: 2.5rem;
   text-decoration: none;
   border-radius: 100vh;
-  transition: 0.1s;
+  transition: translate 0.1s;
   display: flex;
-  gap: 1.75rem;
+  gap: 1.5rem;
+}
+
+.button img {
+  height: 3rem;
+  vertical-align: middle;
 }
 
 .button:hover {
@@ -107,8 +122,9 @@ header .heading p {
 header .frog-blob {
   margin: 0;
   position: absolute;
-  right: 10rem;
-  top: 4rem;
+  right: 2rem;
+  top: 6rem;
+  height: 24rem;
   background-color: var(--primary);
 }
 
@@ -116,10 +132,60 @@ header .blob1 {
   position: absolute;
   bottom: 0;
   right: 0;
+  height: 16rem;
 }
 
 header .blob2 {
   position: absolute;
   top: 0;
   left: 0;
+  height: 16rem;
+}
+
+@media (width >= 64rem) {
+  :root {
+    font-size: 10pt;
+  }
+
+  header {
+    padding: 4rem;
+  }
+
+  header .frog-blob {
+    right: 10rem;
+    top: 4rem;
+    height: 28rem;
+  }
+
+  header .blob1 {
+    height: 20rem;
+  }
+
+  header .blob2 {
+    height: 20rem;
+  }
+}
+
+@media (width >= 96rem) {
+  :root {
+    font-size: 12pt;
+  }
+
+  header {
+    padding: 6rem;
+  }
+
+  header .frog-blob {
+    right: 10rem;
+    top: 4rem;
+    height: 32rem;
+  }
+
+  header .blob1 {
+    height: 24rem;
+  }
+
+  header .blob2 {
+    height: 24rem;
+  }
 }
